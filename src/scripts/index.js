@@ -1,7 +1,5 @@
-let resultCount = 20;
-
 let url =
-  "https://newsapi.org/v2/top-headlines?country=in&apiKey=19b9427d288e4e69aa5a110fd6294e39&pagesize=${resultCount}";
+  "https://newsapi.org/v2/top-headlines?country=in&apiKey=19b9427d288e4e69aa5a110fd6294e39&pagesize=20";
 
 let search = function (keyword) {
   let searchUrl = url + `&q=${keyword}`;
@@ -19,7 +17,12 @@ let prepareHtmlFromData = function (dataArr) {
   console.log(dataArr);
   let finalHtml = "";
   if (dataArr.length == 0) {
-    document.getElementById("news-articles").innerHTML = "No Results .......";
+    let errorMessage = `
+    <div class = "not-found">
+      No such articles found...
+    </div>`;
+    console.log(errorMessage);
+    document.getElementById("news-articles").innerHTML = errorMessage;
     return;
   }
 

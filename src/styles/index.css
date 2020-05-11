@@ -104,6 +104,10 @@
   color: #4bc4b8;
 }
 
+.not-found {
+  color: #4bc4b8;
+}
+
 .article:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
