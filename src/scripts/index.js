@@ -1,5 +1,7 @@
+let resultCount = 20;
+
 let url =
-  "https://newsapi.org/v2/top-headlines?country=in&apiKey=19b9427d288e4e69aa5a110fd6294e39&pagesize=20";
+  "https://newsapi.org/v2/top-headlines?country=in&apiKey=19b9427d288e4e69aa5a110fd6294e39&pagesize=${resultCount}";
 
 let search = function (keyword) {
   let searchUrl = url + `&q=${keyword}`;
