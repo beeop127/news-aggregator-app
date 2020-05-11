@@ -19,7 +19,7 @@ let prepareHtmlFromData = function (dataArr) {
   if (dataArr.length == 0) {
     let errorMessage = `
     <div class = "not-found">
-      No such articles found...
+    No article was found based on the search.
     </div>`;
     console.log(errorMessage);
     document.getElementById("news-articles").innerHTML = errorMessage;
