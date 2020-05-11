@@ -40,7 +40,7 @@ let prepareHtmlFromData = function (dataArr) {
     console.log(dataArr.length);
   }
 
-  document.getElementById("news-articles").innerHTML = finalHtml;
+  document.getElementById("article").innerHTML = finalHtml;
 };
 
 let callApi = function (url) {
