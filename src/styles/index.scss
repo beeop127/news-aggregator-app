@@ -34,7 +34,7 @@
 .result {
   padding-right: 7em;
 
-  #news-articles {
+  .article {
     list-style: none;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -101,7 +101,7 @@
     grid-template-columns: 1fr !important;
   }
 
-  .result{
-      padding-right: 3rem !important;
+  .result {
+    padding-right: 3rem !important;
   }
 }

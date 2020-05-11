@@ -22,6 +22,7 @@ let prepareHtmlFromData = function (dataArr) {
     document.getElementById("news-articles").innerHTML = "No Results .......";
     return;
   }
+
   for (let i = 0; i < dataArr.length; i++) {
     console.log(dataArr[i]);
     let htmlString = `
@@ -36,6 +37,7 @@ let prepareHtmlFromData = function (dataArr) {
     console.log(htmlString);
     finalHtml = finalHtml + htmlString;
     console.log(finalHtml);
+    console.log(dataArr.length);
   }
 
   document.getElementById("news-articles").innerHTML = finalHtml;
