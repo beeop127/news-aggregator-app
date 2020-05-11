@@ -26,7 +26,7 @@ let prepareHtmlFromData = function (dataArr) {
   for (let i = 0; i < dataArr.length; i++) {
     console.log(dataArr[i]);
     let htmlString = `
-    <li>
+    <li class = "card">
       <a class = "article-link" href = "${dataArr[i]['url']}">
         <img class = "article-img"  src="${dataArr[i]['urlToImage']}"></img>
         <h2 class = "article-title">${dataArr[i]["title"]}</h2> 

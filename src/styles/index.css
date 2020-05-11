@@ -104,6 +104,13 @@
   color: #4bc4b8;
 }
 
+.card:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 @media screen and (max-width: 1440px) {
   #news-articles {
     display: -ms-grid;
