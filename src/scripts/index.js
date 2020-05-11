@@ -19,7 +19,7 @@ let prepareHtmlFromData = function (dataArr) {
   console.log(dataArr);
   let finalHtml = "";
   if (dataArr.length == 0) {
-    document.getElementById("articles").innerHTML = "No Results .......";
+    document.getElementById("news-articles").innerHTML = "No Results .......";
     return;
   }
 
