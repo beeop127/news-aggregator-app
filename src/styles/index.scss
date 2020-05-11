@@ -34,7 +34,7 @@
 .result {
   padding-right: 7em;
 
-  .news-articles {
+  #news-articles {
     list-style: none;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -88,7 +88,7 @@
 //   100%{transform: scale(1.1);}
 // }
 
-.card:hover{
+.article:hover{
   transition: 0.5s;
   transform: scale(1.1) ;
 }
