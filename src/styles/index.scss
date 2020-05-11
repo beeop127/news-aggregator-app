@@ -1,0 +1,82 @@
+@import "./reset.css";
+
+* {
+  font-family: cursive;
+  font-size: 14px;
+  background-color: #212121;
+  color: white;
+  margin: 1rem;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: center;
+
+  .site-title {
+    font-size: 1.6rem;
+    border: 1px solid white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+  }
+}
+
+.search-container {
+  display: flex;
+  border-bottom: 2px solid white;
+  #search {
+    width: 100%;
+    height: 2rem;
+    border: none;
+    outline: none;
+  }
+}
+
+.result {
+  padding-right: 7em;
+
+  #news-articles {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background: transparent;
+
+    li {
+      background-color: #393939;
+      align-items: center;
+      border-radius: 10px;
+
+      a{
+          text-decoration: none;
+      }
+
+      .article-img {
+        display: flex;
+        width: 92%;
+        height: auto;
+        background-color: #393939;
+        border-radius: 5px;
+      }
+
+      .article-title {
+        background: #393939;
+        text-size-adjust: 1.5rem;
+        display: flex;
+        text-align: center;
+      }
+
+      .article-description {
+        background-color: #393939;
+        display: flex;
+        color: rgb(227, 222, 209);
+      }
+
+      .article-author {
+        background-color: #393939;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 0.8rem;
+        color: rgb(75, 196, 184);
+      }
+    }
+  }
+}

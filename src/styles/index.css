@@ -1,2 +1,106 @@
-@import "./reset.css";
+@import url(d:\Greyatom\news-aggregator-app\src\styles\reset.css);
+* {
+  font-family: cursive;
+  font-size: 14px;
+  background-color: #212121;
+  color: white;
+  margin: 1rem;
+}
 
+.headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.headerContainer .site-title {
+  font-size: 1.6rem;
+  border: 1px solid white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+}
+
+.search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid white;
+}
+
+.search-container #search {
+  width: 100%;
+  height: 2rem;
+  border: none;
+  outline: none;
+}
+
+.result {
+  padding-right: 7em;
+}
+
+.result #news-articles {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  background: transparent;
+}
+
+.result #news-articles li {
+  background-color: #393939;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.result #news-articles li a {
+  text-decoration: none;
+}
+
+.result #news-articles li .article-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 92%;
+  height: auto;
+  background-color: #393939;
+  border-radius: 5px;
+}
+
+.result #news-articles li .article-title {
+  background: #393939;
+  -webkit-text-size-adjust: 1.5rem;
+     -moz-text-size-adjust: 1.5rem;
+      -ms-text-size-adjust: 1.5rem;
+          text-size-adjust: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.result #news-articles li .article-description {
+  background-color: #393939;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #e3ded1;
+}
+
+.result #news-articles li .article-author {
+  background-color: #393939;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 0.8rem;
+  color: #4bc4b8;
+}
+/*# sourceMappingURL=index.css.map */
